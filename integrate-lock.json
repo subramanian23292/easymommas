@@ -1,0 +1,173 @@
+{
+  "lockfileVersion": 1,
+  "packages": {
+    "@babel/core": {
+      "version": "^7.25.2",
+      "integrated": false
+    },
+    "@babel/plugin-transform-export-namespace-from": {
+      "version": "^7.29.7",
+      "integrated": false
+    },
+    "@babel/preset-env": {
+      "version": "^7.25.3",
+      "integrated": false
+    },
+    "@babel/runtime": {
+      "version": "^7.25.0",
+      "integrated": false
+    },
+    "@d11/react-native-fast-image": {
+      "version": "^8.13.0",
+      "integrated": false
+    },
+    "@native-html/render": {
+      "version": "^1.0.3",
+      "integrated": false
+    },
+    "@react-native-async-storage/async-storage": {
+      "version": "^3.1.1",
+      "integrated": false
+    },
+    "@react-native-community/cli": {
+      "version": "20.1.0",
+      "integrated": false
+    },
+    "@react-native-community/cli-platform-android": {
+      "version": "20.1.0",
+      "integrated": false
+    },
+    "@react-native-community/cli-platform-ios": {
+      "version": "20.1.0",
+      "integrated": false
+    },
+    "@react-native-community/netinfo": {
+      "version": "^12.0.1",
+      "integrated": false
+    },
+    "@react-native/babel-preset": {
+      "version": "0.85.3",
+      "integrated": false
+    },
+    "@react-native/eslint-config": {
+      "version": "0.85.3",
+      "integrated": false
+    },
+    "@react-native/jest-preset": {
+      "version": "0.85.3",
+      "integrated": false
+    },
+    "@react-native/metro-config": {
+      "version": "0.85.3",
+      "integrated": false
+    },
+    "@react-navigation/native": {
+      "version": "^7.2.5",
+      "integrated": false
+    },
+    "@react-navigation/stack": {
+      "version": "^7.9.3",
+      "integrated": false
+    },
+    "@reduxjs/toolkit": {
+      "version": "^2.12.0",
+      "integrated": false
+    },
+    "@shopify/flash-list": {
+      "version": "^2.3.1",
+      "integrated": false
+    },
+    "axios": {
+      "version": "^1.17.0",
+      "integrated": false
+    },
+    "babel-plugin-transform-remove-console": {
+      "version": "^6.9.4",
+      "integrated": false
+    },
+    "eslint": {
+      "version": "^8.19.0",
+      "integrated": false
+    },
+    "formik": {
+      "version": "^2.4.9",
+      "integrated": false
+    },
+    "jest": {
+      "version": "^29.6.3",
+      "integrated": false
+    },
+    "lottie-react-native": {
+      "version": "^7.3.8",
+      "integrated": false
+    },
+    "prettier": {
+      "version": "2.8.8",
+      "integrated": false
+    },
+    "react": {
+      "version": "19.2.3",
+      "integrated": false
+    },
+    "react-native": {
+      "version": "0.85.3",
+      "integrated": false
+    },
+    "react-native-config": {
+      "version": "^1.6.1",
+      "integrated": true
+    },
+    "react-native-gesture-handler": {
+      "version": "^3.0.0",
+      "integrated": false
+    },
+    "react-native-reanimated": {
+      "version": "^4.4.1",
+      "integrated": false
+    },
+    "react-native-safe-area-context": {
+      "version": "^5.5.2",
+      "integrated": false
+    },
+    "react-native-screens": {
+      "version": "^4.25.2",
+      "integrated": false
+    },
+    "react-native-svg": {
+      "version": "^15.15.5",
+      "integrated": false
+    },
+    "react-native-svg-transformer": {
+      "version": "^1.5.3",
+      "integrated": false
+    },
+    "react-native-webview": {
+      "version": "^13.16.1",
+      "integrated": false
+    },
+    "react-native-worklets": {
+      "version": "^0.10.0",
+      "integrated": false
+    },
+    "react-redux": {
+      "version": "^9.3.0",
+      "integrated": false
+    },
+    "react-test-renderer": {
+      "version": "19.2.3",
+      "integrated": false
+    },
+    "redux-saga": {
+      "version": "^1.5.0",
+      "integrated": false
+    },
+    "sonner-native": {
+      "version": "^0.26.3",
+      "integrated": false
+    },
+    "yup": {
+      "version": "^1.7.1",
+      "integrated": false
+    }
+  }
+}

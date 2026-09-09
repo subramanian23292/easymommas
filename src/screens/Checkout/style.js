@@ -1,0 +1,273 @@
+import { StyleSheet } from 'react-native';
+import Theme from '../../components/Theme';
+
+export const styles = StyleSheet.create({
+    scrollContainer: {
+        padding: 10,
+        paddingBottom: 82,
+    },
+    addressinfo: {
+        borderBottomWidth: 1,
+        paddingBottom: 10,
+        borderBottomColor: '#dddddd',
+    },
+    addressinfoname: {
+        fontSize: 16,
+        color: Theme.colors.paragraph,
+        fontFamily: Theme.fontstyle.regular,
+    },
+    addrtitle: {
+        fontFamily: Theme.fontstyle.semibold,
+        fontSize: 16,
+        marginBottom: 10,
+    },
+    addressinfovalue: {
+        fontSize: 16,
+        color: Theme.colors.paragraph,
+        fontFamily: Theme.fontstyle.regular,
+    },
+    checkbtn: {
+        flexDirection: 'row',
+        marginVertical: 10,
+    },
+    checkicon: {
+        height: 18,
+        width: 18,
+        borderWidth: 2,
+        borderColor: '#dddddd',
+        borderRadius: 4,
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
+    checktrue: {
+        borderWidth: 0,
+        backgroundColor: Theme.colors.secondary,
+    },
+    checkfalse: {
+        borderWidth: 1,
+        borderColor: '#d0d0d0',
+        backgroundColor: 'transparent',
+    },
+    checkbtnlabel: {
+        fontSize: 16,
+        color: Theme.colors.paragraph,
+        marginLeft: 10,
+        fontFamily: Theme.fontstyle.regular,
+    },
+    changebtn: {
+        height: 40,
+        width: 90,
+        borderRadius: 100,
+        alignItems: 'center',
+        justifyContent: 'center',
+        marginTop: 10,
+        backgroundColor: Theme.colors.secondary,
+    },
+    changetext: {
+        color: '#fff',
+    },
+    footercontainer: {
+        backgroundColor: '#ffffff',
+        position: 'absolute',
+        height: 72,
+        width: '100%',
+        flexDirection: 'row',
+        padding: 10,
+        borderTopWidth: 1,
+        borderTopColor: '#dddddd',
+    },
+    proceedbtn: {
+        height: 50,
+        backgroundColor: Theme.colors.secondary,
+        borderRadius: 100,
+        alignItems: 'center',
+        justifyContent: 'center',
+        width: '100%',
+    },
+    proceedlabel: {
+        fontSize: 16,
+        color: '#ffffff',
+        fontFamily: Theme.fontstyle.semibold,
+    },
+    addressbtnouter: {
+        padding: 10,
+    },
+    deliverybtn: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        borderWidth: 2,
+        height: 60,
+        alignItems: 'center',
+        paddingHorizontal: 10,
+        marginBottom: 20,
+        borderRadius: 6,
+    },
+    activedelbtn: {
+        borderColor: Theme.colors.secondary,
+    },
+    inactivedelbtn: {
+        borderColor: '#dddddd',
+    },
+    deltext: {
+        fontSize: 16,
+        color: Theme.colors.paragraph,
+        fontFamily: Theme.fontstyle.regular,
+    },
+    radiouter: {
+        height: 20,
+        width: 20,
+        borderRadius: 100,
+        borderWidth: 2,
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
+    radiouteractive: {
+        borderColor: Theme.colors.secondary,
+    },
+    radiouterinactive: {
+        borderColor: '#dddddd',
+    },
+    radioinner: {
+        height: 10,
+        width: 10,
+        borderRadius: 100,
+        backgroundColor: Theme.colors.secondary,
+    },
+    deliverinner: {
+        flexDirection: 'row',
+        gap: 10,
+    },
+    paypalbtn: {
+        backgroundColor: '#ffc43a',
+        height: 50,
+        borderRadius: 100,
+        alignItems: 'center',
+        justifyContent: 'center',
+        width: '100%',
+        flexDirection: 'row',
+        gap: 10,
+    },
+    paypalbtntext: {
+        color: '#000000',
+        fontSize: 16,
+        fontFamily: Theme.fontstyle.semibold,
+    },
+    prodcontainer: {
+        overflow: 'hidden',
+        flexDirection: 'row',
+        gap: 10,
+    },
+    imgcontainer: {
+        flexBasis: 70,
+        overflow: 'hidden',
+    },
+    fastimg: {
+        height: 70,
+        width: 70,
+    },
+    rowseparator: {
+        height: 1,
+        backgroundColor: '#dddddd',
+        marginVertical: 10,
+    },
+    priceinfo: {
+        flexDirection: 'row',
+        gap: 40,
+        marginTop: 10,
+    },
+    prodlabel: {
+        fontSize: 16,
+        fontFamily: Theme.fontstyle.regular,
+    },
+    prodoptions: {
+        color: 'rgba(0,0,0,.6)',
+        fontSize: 14,
+        fontFamily: Theme.fontstyle.regular,
+    },
+    totalContainer: {
+        marginTop: 20,
+        borderTopWidth: 1,
+        borderTopColor: '#dddddd',
+    },
+    totalItem: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        marginVertical: 10,
+    },
+    totaltext: {
+        fontSize: 16,
+        color: Theme.colors.paragraph,
+        fontFamily: Theme.fontstyle.regular,
+    },
+    prodtotal: {
+        fontFamily: Theme.fontstyle.semibold,
+        fontSize: 14,
+    },
+    prodqty: {
+        fontFamily: Theme.fontstyle.regular,
+        fontSize: 14,
+    },
+    couponinput: {
+        borderWidth: 1,
+        borderRadius: 100,
+        height: 50,
+        paddingHorizontal: 20,
+        fontSize: 16,
+        color: Theme.colors.paragraph,
+        fontFamily: Theme.fontstyle.regular,
+        borderColor: '#dddddd',
+        width: '100%',
+        paddingRight: 140,
+    },
+    applybtn: {
+        height: 50,
+        backgroundColor: Theme.colors.secondary,
+        borderTopEndRadius: 100,
+        borderBottomEndRadius: 100,
+        justifyContent: 'center',
+        alignItems: 'center',
+        position: 'absolute',
+        right: 0,
+    },
+    couponouter: {
+        position: 'relative',
+    },
+    applytext: {
+        textAlign: 'center',
+        fontFamily: Theme.fontstyle.semibold,
+        fontSize: 16,
+        color: '#ffffff',
+        width: 130,
+    },
+    couponouterContainer: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        marginBottom: 10,
+    },
+    appliedcouponouter: {
+        backgroundColor: '#efecec',
+        flexDirection: 'row',
+        alignItems: 'center',
+        alignSelf: 'flex-start',
+        padding: 10,
+        gap: 16,
+        borderRadius: 6,
+        minWidth: 10,
+        marginBottom: 10,
+    },
+    appliedcouponcode: {
+        fontFamily: Theme.fontstyle.regular,
+        color: Theme.colors.paragraph,
+        fontSize: 16,
+    },
+    viewoffersbtn: {
+        borderBottomWidth: 1,
+        borderBottomColor: Theme.colors.paragraph,
+    },
+    viewoffers: {
+        fontFamily: Theme.fontstyle.semibold,
+        color: Theme.colors.paragraph,
+        fontSize: 14,
+    },
+});
