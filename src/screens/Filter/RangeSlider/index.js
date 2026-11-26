@@ -91,13 +91,13 @@ const RangeSlider = ({ sliderWidth, min, max, defaultmin, defaultmax, step, onVa
 
   const minLabelText = useAnimatedProps(() => {
     return {
-      text: `€${min + Math.floor(position.value / stepWidth) * step}`,
+      text: `₹${min + Math.floor(position.value / stepWidth) * step}`,
     };
   });
 
   const maxLabelText = useAnimatedProps(() => {
     return {
-      text: `€${min + Math.floor(position2.value / stepWidth) * step}`,
+      text: `₹${min + Math.floor(position2.value / stepWidth) * step}`,
     };
   });
 
@@ -110,14 +110,14 @@ const RangeSlider = ({ sliderWidth, min, max, defaultmin, defaultmax, step, onVa
             style={styles.labelText}
             animatedProps={minLabelText}
             editable={false}
-            defaultValue={`€${min + Math.floor(position.value / stepWidth) * step}`}
+            defaultValue={`₹${min + Math.floor(position.value / stepWidth) * step}`}
           />
           <Text style={styles.separator}>-</Text>
           <AnimatedTextInput
             style={styles.labelText}
             animatedProps={maxLabelText}
             editable={false}
-            defaultValue={`€${min + Math.floor(position2.value / stepWidth) * step}`}
+            defaultValue={`₹${min + Math.floor(position2.value / stepWidth) * step}`}
           />
         </View>
       </View>

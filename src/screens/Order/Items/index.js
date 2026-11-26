@@ -27,7 +27,7 @@ function Product({ data, ordstatus, orderId }) {
                 </Pressable>
                 <View style={styles.qtyprice}>
                     <Text style={styles.qtypricelabel}>Qty{':'} {data.qty}</Text>
-                    <Text style={styles.qtypricelabel}>{`€${data.total}`}</Text>
+                    <Text style={styles.qtypricelabel}>{`₹${data.total}`}</Text>
                 </View>
                 {ordstatus === 5 &&
                 <View style={styles.revcontainer}>

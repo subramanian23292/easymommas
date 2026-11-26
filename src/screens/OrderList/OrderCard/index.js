@@ -17,7 +17,7 @@ function OrderCard({data}) {
             </View>
             <View style={styles.footer}>
                 <Text style={styles.orderheading}>Satus <Text style={styles.ordervalue}>{data.order_status}</Text></Text>
-                <Text style={styles.orderheading}>Total <Text style={styles.ordervalue}>{`€${data.total}`}</Text></Text>
+                <Text style={styles.orderheading}>Total <Text style={styles.ordervalue}>{`₹${data.total}`}</Text></Text>
             </View>
         </Pressable>
     );

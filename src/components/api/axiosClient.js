@@ -2,8 +2,8 @@ import axios from 'axios';
 import Config from "react-native-config";
 
 const axiosClient = axios.create({
-  baseURL: Config.API_URL,
-  //baseURL: 'http://192.168.0.154/desidrop/apis/',
+  //baseURL: Config.API_URL,
+  baseURL: 'http://192.168.0.193/desidrop/apis/',
   timeout: 120000,
   headers: {
     'Access-Control-Allow-Origin': '*',

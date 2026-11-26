@@ -51,7 +51,7 @@ const DeliveryMethod = () => {
                             </View>
                             <Text style={styles.deltext}>{item.method}</Text>
                         </View>
-                        <Text style={styles.deltext}>{`€${item.amount}`}</Text>
+                        <Text style={styles.deltext}>{`₹${item.amount}`}</Text>
                     </Pressable>
                 ))}
             </ScrollView>

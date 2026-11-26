@@ -52,7 +52,7 @@ function Product({ data, openqtymodal }) {
                 </View>
                 <View style={styles.pricecontainer}>
                     <View style={styles.priceouter}>
-                        <Text style={styles.prodprice}>{`€${finalprodtotal}`}</Text>
+                        <Text style={styles.prodprice}>{`₹${finalprodtotal}`}</Text>
                     </View>
                     <View style={styles.qtycontainer}>
                         <Pressable style={styles.qtybtn} onPress={openmodal}>

@@ -3,14 +3,15 @@ import { View, Text, Pressable } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useSelector, useDispatch } from 'react-redux';
 import { useFocusEffect, useNavigation, useRoute } from '@react-navigation/native';
+import RazorpayCheckout from 'react-native-razorpay';
+import Config from "react-native-config";
 import AppHoc from '../../../components/AppHoc';
 import CheckoutStepper from '../../../components/CheckoutStepper';
 import { styles } from '../style';
-import PaypalImg from '../../../img/paypal.svg';
 import CartData from '../CartData';
 import { cancelCoupon, couponCheck } from '../../../store/checkout/checkoutSlice';
 import CouponLoader from '../../../components/Loader/CouponLoader';
-import { createorderApi } from '../../../components/api';
+import { createorderApi, capturepaymentApi } from '../../../components/api';
 import Loader from '../../../components/Loader';
 import FailModal from './FailModal';
 
@@ -65,11 +66,46 @@ const Payment = () => {
         try {
             const response = await createorderApi(payload);
             if (response.status === 200) {
-                const approveLink = response.data.links.find(l => l.rel === 'approve').href;
-                navigation.navigate('PaymentReview', { payurl: approveLink, order_id: response.data.order_id });
-            }
-            setPayloading(false);
+                initPayment(response.data);
+            }            
         } catch(e) {
+            setPayloading(false);
+        }
+    }
+
+    async function initPayment(orderData) {
+        var options = {
+            //key: Config.RAZORPAY_KEY_ID,
+            key: 'rzp_test_U3guBig0JKpbFn',
+            name: 'Easymommas',
+            description: 'Order',
+            order_id: orderData.razorpay_order_id,
+            amount: cartTotal.total.toFixed(2) * 100,            
+            prefill: {
+                name: `${deliveryAddress.fname} ${deliveryAddress.lname}`,
+                email: orderData.email,
+                contact: `+91${deliveryAddress.contactno}`,
+            },
+            theme: {color: '#86415f'}
+        };        
+        RazorpayCheckout.open(options).then((data) => {
+            handlePaymentSuccess(data, orderData.order_id);
+        }).catch((error) => {
+            setPayloading(false);
+            failmodalRef.current.openmodal();
+        });
+    }
+
+    async function handlePaymentSuccess(paymentData, order_id) {
+        try {
+            const payload = { ...paymentData, order_id, cus_id: cusId };
+            const response = await capturepaymentApi(payload);
+            if (response.status === 200 && response.data?.status) {
+                setPayloading(false);
+                navigation.navigate('Success', { id: response.data?.order_no });
+            }            
+        } catch(e) {
+            setPayloading(false);
         }
     }
 
@@ -79,7 +115,7 @@ const Payment = () => {
         <View style={[styles.footercontainer, {bottom: insets.bottom}]}>
             <Pressable style={styles.paypalbtn} onPress={handlePayment}>
                 <Text style={styles.paypalbtntext}>Pay now with</Text>
-                <PaypalImg width={100} height={30} />
+                <Text style={[styles.paypalbtntext, styles.razorpaybtntext]}>Razorpay</Text>
             </Pressable>
         </View>
         <CouponLoader />

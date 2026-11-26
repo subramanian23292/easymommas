@@ -55,8 +55,8 @@ function ProductCard({ data }) {
             </View>
             <View style={styles.infocontainer}>
                 <View style={styles.pricecontainer}>
-                    <Text style={styles.sp}>{`€${data.sp}`}</Text>
-                    {hasMRP && <Text style={styles.mrp}>{`€${data.mrp}`}</Text>}
+                    <Text style={styles.sp}>{`₹${data.sp}`}</Text>
+                    {hasMRP && <Text style={styles.mrp}>{`₹${data.mrp}`}</Text>}
                 </View>
                 <Pressable style={[styles.cartbtn, { backgroundColor: isOutOfStock ? '#a07183' : Theme.colors.secondary }]} disabled={isOutOfStock} onPress={cartAdd}>
                     <AppIcon.Cart width={16} height={16} />

@@ -26,7 +26,6 @@ import DeliveryMethod from '../screens/Checkout/DeliveryMethod';
 import Payment from '../screens/Checkout/Payment';
 import Review from '../screens/Review';
 import WriteReview from '../screens/WriteReview';
-import PaymentReview from '../screens/PaymentReview';
 import Success from '../screens/Success';
 import DeliveryAddress from '../screens/SelectAddress/DeliveryAddress';
 import BillingAddress from '../screens/SelectAddress/BillingAddress';
@@ -134,7 +133,6 @@ function AppStack() {
         }}
       >
         <Stack.Screen name="Success" component={Success} options={{ gestureEnabled: false }} />
-        <Stack.Screen name="PaymentReview" component={PaymentReview} options={{ gestureEnabled: false }} />
         <Stack.Screen name="Login" component={Login} />
         <Stack.Screen name="Register" component={Register} />
         <Stack.Screen name="Filter" component={Filter} />

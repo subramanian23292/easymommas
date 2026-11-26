@@ -138,7 +138,7 @@ export const styles = StyleSheet.create({
         gap: 10,
     },
     paypalbtn: {
-        backgroundColor: '#ffc43a',
+        backgroundColor: '#032b7d',
         height: 50,
         borderRadius: 100,
         alignItems: 'center',
@@ -148,9 +148,13 @@ export const styles = StyleSheet.create({
         gap: 10,
     },
     paypalbtntext: {
-        color: '#000000',
+        color: '#fff',
         fontSize: 16,
         fontFamily: Theme.fontstyle.semibold,
+    },
+    razorpaybtntext: {
+        fontWeight: 'bold',
+        fontStyle: 'italic',
     },
     prodcontainer: {
         overflow: 'hidden',

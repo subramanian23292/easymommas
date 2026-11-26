@@ -23,8 +23,8 @@ function Info({ reviews = {}, variation = {}, prodname = '', sizeguide = {}, gui
                 <Text style={styles.reviewtext}>{`(${reviews.count} customer reviews)`}</Text>
             </Pressable>
             <View style={styles.pricecontainer}>
-                <Text style={styles.sp}>{'€'}{variation.sp}</Text>
-                {hasMRP && <Text style={styles.mrp}>{'€'}{variation.mrp}</Text>}
+                <Text style={styles.sp}>{'₹'}{variation.sp}</Text>
+                {hasMRP && <Text style={styles.mrp}>{'₹'}{variation.mrp}</Text>}
             </View>
             {hasguide && <View style={styles.sizeguidebtnouter}>
                 <Pressable style={styles.sizeguidebtn} onPress={openguidemodal}>

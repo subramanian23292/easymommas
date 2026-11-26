@@ -17,7 +17,7 @@ const Product = ({ data }) => {
                 <Text numberOfLines={1} ellipsizeMode="tail" style={styles.prodlabel}>{data.prod_name}</Text>
                 <Text numberOfLines={1} ellipsizeMode="tail" style={styles.prodoptions}>{data.combo_name}</Text>
                 <View style={styles.priceinfo}>
-                    <Text style={styles.prodtotal}>{`€${finalprodtotal}`}</Text>
+                    <Text style={styles.prodtotal}>{`₹${finalprodtotal}`}</Text>
                     <Text style={styles.prodqty}>Qty: {data.qty}</Text>
                 </View>
             </View>

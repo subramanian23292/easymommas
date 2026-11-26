@@ -27,20 +27,20 @@ const CartTotal = () => {
             <Coupon />
             <View style={styles.totalItem}>
                 <Text style={styles.totaltext}>Subtotal</Text>
-                <Text style={styles.totaltext}>{`€${finalsubtotal}`}</Text>
+                <Text style={styles.totaltext}>{`₹${finalsubtotal}`}</Text>
             </View>
             {couponcode !== '' &&
             <View style={styles.totalItem}>
                 <Text style={styles.totaltext}>Discount {`(${couponcode})`}</Text>
-                <Text style={styles.totaltext}>{`- €${discountamount}`}</Text>
+                <Text style={styles.totaltext}>{`- ₹${discountamount}`}</Text>
             </View>}
             <View style={styles.totalItem}>
                 <Text style={styles.totaltext}>Shipping</Text>
-                <Text style={styles.totaltext}>{`€${shippingCharge.amount}`}</Text>
+                <Text style={styles.totaltext}>{`₹${shippingCharge.amount}`}</Text>
             </View>
             <View style={styles.totalItem}>
                 <Text style={styles.totaltext}>Total</Text>
-                <Text style={styles.totaltext}>{`€${finaltotal}`}</Text>
+                <Text style={styles.totaltext}>{`₹${finaltotal}`}</Text>
             </View>
         </View>
     );

@@ -23,7 +23,7 @@ function Footer() {
         <View style={[styles.footercontainer, {bottom: insets.bottom}]}>
             <View style={styles.totalcontainer}>
                 <Text style={styles.totalheading}>Sub Total</Text>
-                <Text style={styles.totalvalue}>{`€${finalsubtotal}`}</Text>
+                <Text style={styles.totalvalue}>{`₹${finalsubtotal}`}</Text>
             </View>
             <View style={styles.buttoncontainer}>
                 <Pressable style={styles.proceedbtn} onPress={handleNavigate}>
